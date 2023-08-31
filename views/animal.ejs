@@ -38,34 +38,29 @@
 </head>
 <body>
     <header>
-        <h1>Blog Title</h1>
-        <p>Author: John Doe | Date: August 29, 2023</p>
+        <h1><%= specific.title %></h1>
+        <p>Author: <%= specific.author %> | Date: <%= specific.date %></p>
     </header>
 
     <div class="container">
         <div class="blog-content">
             <h2>Introduction</h2>
             <p>
-                This is the introduction of the blog post. You can provide some context about the topic
-                you're going to discuss in the blog.
+                <%= specific.introduction %>
             </p>
 
             <h2>Main Content</h2>
             <p>
-                Here you can provide the main content of your blog post. Feel free to include paragraphs,
-                images, lists, and other elements to make your blog informative and engaging.
+                <%= specific.detailed %>
             </p>
 
-            <img class="blog-image" src="https://cdn.pixabay.com/photo/2017/11/06/15/30/elephants-2923917_1280.jpg" alt="Image description">
+            <img class="blog-image" src="<%= specific.imageSrc %>" alt="Image description">
 
-            <p>
-                This paragraph can continue discussing the content in relation to the image.
-            </p>
+            
 
             <h2>Conclusion</h2>
             <p>
-                Summarize the key points you've discussed in the blog post. You can also provide some
-                final thoughts, suggestions, or a call to action.
+                <%= specific.conclusion %>
             </p>
         </div>
     </div>
