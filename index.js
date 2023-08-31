@@ -6,7 +6,7 @@ const path = require('path')
 const Animal = require(path.join(__dirname, 'models', 'animals.js'));
 const Specific = require(path.join(__dirname, 'models', 'specific.js'));
 
-mongoose.connect('mongodb+srv://yash1:yash1@cluster0.txq9fum.mongodb.net/blog?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://yash1:<password>@cluster0.txq9fum.mongodb.net/blog?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
