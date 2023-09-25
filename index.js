@@ -10,7 +10,7 @@ const dataModel = require(path.join(__dirname, 'models', 'register.js'));
 const userModel = require(path.join(__dirname, 'models', 'user.js'));
 const newBlog = require(path.join(__dirname, 'models', 'addblog.js'))
 app.use(express.urlencoded({ extended: true }));
-mongoose.connect('mongodb+srv://yash1:yash1@cluster0.txq9fum.mongodb.net/blog?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://yash1:<password>@cluster0.txq9fum.mongodb.net/blog?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
